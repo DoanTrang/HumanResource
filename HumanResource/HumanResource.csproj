@@ -82,10 +82,10 @@
     <Compile Include="Models\RecruitmentRequirement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recruitment\frmRecruitmentRequirement.cs">
+    <Compile Include="HRForm\Recruitment\frmRecruitmentRequirement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Recruitment\frmRecruitmentRequirement.Designer.cs">
+    <Compile Include="HRForm\Recruitment\frmRecruitmentRequirement.Designer.cs">
       <DependentUpon>frmRecruitmentRequirement.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmMain.resx">
@@ -107,7 +107,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Recruitment\frmRecruitmentRequirement.resx">
+    <EmbeddedResource Include="HRForm\Recruitment\frmRecruitmentRequirement.resx">
       <DependentUpon>frmRecruitmentRequirement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

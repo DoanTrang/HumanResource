@@ -2,7 +2,7 @@
 using DevExpress.XtraEditors;
 using DevExpress.XtraTab;
 using DevExpress.XtraTab.ViewInfo;
-using HumanResource.Recruitment;
+using HumanResource.HRForm.Recruitment;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
