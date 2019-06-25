@@ -27,7 +27,5 @@ namespace HumanResource.HRForm.Recruitment
             var lstObj = _dbContext.RecruitmentRequirements.ToList();
             grRR.DataSource = lstObj;
         }
-
-
     }
 }

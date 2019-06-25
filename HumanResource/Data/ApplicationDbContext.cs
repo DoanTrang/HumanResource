@@ -5,12 +5,13 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Configuration;
 namespace HumanResource.Data
 {
     class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext() : base(@"Data Source=QUANGSMILE\QUANGHOANG;Initial Catalog=HumanResource;Persist Security Info=True;User ID=sa;Password=1")
+        public static string cntString = ConfigurationManager.ConnectionStrings["HumanResourceconnectionString"].ConnectionString;
+        public ApplicationDbContext() : base(cntString)
         {
 
         }
