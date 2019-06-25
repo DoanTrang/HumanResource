@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
 using DevExpress.XtraTab;
+using DevExpress.XtraTab.ViewInfo;
 using HumanResource.Recruitment;
 using System;
 using System.Collections.Generic;
@@ -77,6 +78,14 @@ namespace HumanResource
 
             //Hien thi
             _f.Show();
+        }
+
+        private void xtraTabMain_CloseButtonClick(object sender, EventArgs e)
+        {
+            ClosePageButtonEventArgs arg = e as ClosePageButtonEventArgs;
+            (arg.Page as XtraTabPage).PageVisible = false;
+            XtraTabControl t = sender as XtraTabControl;
+            t.TabPages.Remove(arg.Page as XtraTabPage);
         }
     }
 }

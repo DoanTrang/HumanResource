@@ -1,4 +1,4 @@
-﻿using HumanResource.Model;
+﻿using HumanResource.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -10,11 +10,19 @@ namespace HumanResource.Data
 {
     class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext() : base()
+        public ApplicationDbContext() : base(@"Data Source=QUANGSMILE\QUANGHOANG;Initial Catalog=HumanResource;Persist Security Info=True;User ID=sa;Password=1")
         {
             Database.SetInitializer(new DropCreateDatabaseAlways<ApplicationDbContext>());
         }
         public DbSet<RecruitmentRequirement> RecruitmentRequirements { get; set; }
-
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<RecruitmentRequirement>().Map(m =>
+        //    {
+        //        m.MapInheritedProperties();
+        //        m.ToTable("RecruitmentRequirements");
+        //    });
+            
+        //}
     }
 }

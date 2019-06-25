@@ -83,7 +83,7 @@
             this.ribbonPage4,
             this.ribbonPage5});
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl1.Size = new System.Drawing.Size(1125, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(1312, 178);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // barButtonItem1
@@ -227,28 +227,30 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 686);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 845);
             this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1125, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1312, 37);
             // 
             // xtraTabMain
             // 
             this.xtraTabMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.xtraTabMain.Location = new System.Drawing.Point(9, 157);
+            this.xtraTabMain.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InActiveTabPageHeader;
+            this.xtraTabMain.Location = new System.Drawing.Point(10, 193);
             this.xtraTabMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xtraTabMain.Name = "xtraTabMain";
-            this.xtraTabMain.Size = new System.Drawing.Size(1107, 525);
+            this.xtraTabMain.Size = new System.Drawing.Size(1291, 646);
             this.xtraTabMain.TabIndex = 2;
+            this.xtraTabMain.CloseButtonClick += new System.EventHandler(this.xtraTabMain_CloseButtonClick);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 717);
+            this.ClientSize = new System.Drawing.Size(1312, 882);
             this.Controls.Add(this.xtraTabMain);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
